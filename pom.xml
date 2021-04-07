@@ -8,6 +8,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>demo-user-service</module>
+        <module>demo-goods-service</module>
+        <module>demo-order-service</module>
     </modules>
     <name>springcloud-alibaba-demo</name>
     <description>Spring Cloud Alibaba Demo</description>
@@ -18,6 +20,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
         <spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
+        <JavaLib.version>2.1.1</JavaLib.version>
+        <api-result.version>2.3.1</api-result.version>
     </properties>
 
     <dependencies>
@@ -61,6 +65,18 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fengwenyi</groupId>
+            <artifactId>JavaLib</artifactId>
+            <version>${JavaLib.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fengwenyi</groupId>
+            <artifactId>api-result</artifactId>
+            <version>${api-result.version}</version>
         </dependency>
     </dependencies>
 
