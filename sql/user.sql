@@ -1,4 +1,4 @@
-CREATE TABLE `user` (
+CREATE TABLE `t_user` (
     `id` bigint(20) NOT NULL,
     `name` varchar(255) COMMENT '姓名',
     `balance` decimal(11, 2) COMMENT '余额',

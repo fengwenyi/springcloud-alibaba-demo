@@ -1,4 +1,4 @@
-CREATE TABLE `order` (
+CREATE TABLE `t_order` (
      `id` bigint(20) NOT NULL,
      `user_id` bigint(20) COMMENT '用户ID',
      `goods_id` bigint(20) COMMENT '商品ID',

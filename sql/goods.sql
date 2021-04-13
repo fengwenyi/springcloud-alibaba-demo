@@ -1,4 +1,4 @@
-CREATE TABLE `goods` (
+CREATE TABLE `t_goods` (
     `id` bigint(20) NOT NULL,
     `name` varchar(255) COMMENT '商品名称',
     `price` decimal(11, 2) COMMENT '商品价格',
