@@ -3,11 +3,15 @@ package com.fengwenyi.demoorderservicecore.controller;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.fengwenyi.api.result.ResultTemplate;
 import com.fengwenyi.demoorderservicecore.handler.CustomerBlockHandler;
+import com.fengwenyi.demoorderservicecore.service.IOrderService;
+import com.fengwenyi.demoorderservicecore.vo.CreateOrderRequestVo;
 import com.fengwenyi.demouserserviceapi.service.IDubboUserService;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.apache.dubbo.config.annotation.DubboReference;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,11 +25,13 @@ import org.springframework.web.bind.annotation.RestController;
         produces = MediaType.APPLICATION_JSON_VALUE)
 public class ApiV1OrderController {
 
+    @Autowired
+    private IOrderService orderService;
+
     // 创建订单
     @RequestMapping("/create")
-    @GlobalTransactional(name = "demo-create-order",rollbackFor = Exception.class)
-    public ResultTemplate<?> create() {
-        return ResultTemplate.success();
+    public ResultTemplate<?> create(@RequestBody CreateOrderRequestVo requestVo) {
+        return orderService.create(requestVo);
     }
 
 //    @DubboReference(version = "1.0.0", check = false, group = "springcloud-alibaba-demo")
