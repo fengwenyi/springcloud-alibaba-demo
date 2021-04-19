@@ -11,9 +11,13 @@
 
     <artifactId>demo-user-service-api</artifactId>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <dependencies>
+        <!-- api -->
+        <dependency>
+            <groupId>com.fengwenyi</groupId>
+            <artifactId>api-result</artifactId>
+            <version>${api-result.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

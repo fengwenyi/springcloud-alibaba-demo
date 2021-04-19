@@ -19,12 +19,11 @@
         </dependency>
 
         <!--seata-->
-        <!--<dependency>
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-alibaba-seata</artifactId>
-            <version>2.2.0.RELEASE</version>
-        </dependency>-->
-        <dependency>
+        </dependency>
+        <!--<dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-alibaba-seata</artifactId>
             <version>2.1.0.RELEASE</version>
@@ -39,7 +38,7 @@
             <groupId>io.seata</groupId>
             <artifactId>seata-all</artifactId>
             <version>${seata.version}</version>
-        </dependency>
+        </dependency>-->
 
         <!-- mybatis-plus -->
         <dependency>
@@ -52,6 +51,12 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- dubbo -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-dubbo</artifactId>
         </dependency>
     </dependencies>
 
