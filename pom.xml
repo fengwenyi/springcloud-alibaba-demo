@@ -14,7 +14,7 @@
     <artifactId>springcloud-alibaba-demo</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloud-alibaba-demo</name>
+    <name>spring-cloud-alibaba-demo</name>
     <description>Spring Cloud Alibaba Demo</description>
 
     <modules>
@@ -106,13 +106,13 @@
         </dependencies>
     </dependencyManagement>
 
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-    </plugins>
-</build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

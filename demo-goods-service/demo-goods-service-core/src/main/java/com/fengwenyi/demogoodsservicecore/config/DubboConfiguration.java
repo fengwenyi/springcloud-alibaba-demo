@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * @since 2021-04-07
  */
 @Configuration
-@EnableDubbo(scanBasePackages = "com.fengwenyi.demogoodsservicecore.dubbo")
+//@EnableDubbo(scanBasePackages = "com.fengwenyi.demogoodsservicecore.dubbo")
+@EnableDubbo
 public class DubboConfiguration {
 }
