@@ -35,12 +35,13 @@ public class ApiV1OrderController {
     }
 
 //    @DubboReference(version = "1.0.0", check = false, group = "springcloud-alibaba-demo")
-    @DubboReference
-    private IDubboUserService dubboUserService;
+//    @DubboReference
+//    private IDubboUserService dubboUserService;
 
     @GetMapping("/user")
     public ResultTemplate<?> getUser(Integer id) {
-        return dubboUserService.getUserById(id);
+//        return dubboUserService.getUserById(id);
+        return null;
     }
 
     @GetMapping("/demo")
