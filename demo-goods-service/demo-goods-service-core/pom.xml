@@ -5,7 +5,7 @@
     <parent>
         <artifactId>demo-goods-service</artifactId>
         <groupId>com.fengwenyi</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>2021.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,7 +15,7 @@
         <dependency>
             <groupId>com.fengwenyi</groupId>
             <artifactId>demo-goods-service-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>2021.1</version>
         </dependency>
 
         <!--seata-->
